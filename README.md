@@ -1,4 +1,4 @@
-capy
+kapy
 ====
 
 Easier and more useful capistrano

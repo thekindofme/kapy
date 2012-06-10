@@ -42,7 +42,7 @@ module Kapy
       templates.collect do |t|
         puts "calling #{section}"
         instance = t.new
-        instance.send(section) << "\n" if instance.respond_to? section
+        instance.send(section).to_source(:strip_enclosure => true) << "\n" if instance.respond_to? section
       end
     end
 
